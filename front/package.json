@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
+    "@chakra-ui/icons": "^1.1.7",
     "@chakra-ui/react": "^1.8.8",
+    "@chakra-ui/system": "^1.12.1",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@redux-devtools/extension": "^3.2.2",

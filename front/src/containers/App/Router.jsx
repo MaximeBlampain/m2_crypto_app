@@ -6,9 +6,10 @@ import Profile from "../Profile"
 import Wallet from "../Wallet"
 import Login from "../Login"
 import Signup from "../Signup"
+import Layout from "../Layout"
 
 function PrivateRoute({ children, isLoggedIn }){
-  return isLoggedIn ? children : <Navigate to="/login" />
+  return isLoggedIn ? (<Layout>{children}</Layout>) : <Navigate to="/login" />
 }
 
 function PublicRoute({ children, isLoggedIn}){

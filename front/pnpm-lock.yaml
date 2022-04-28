@@ -2,7 +2,9 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/core': ^7.0.0
+  '@chakra-ui/icons': ^1.1.7
   '@chakra-ui/react': ^1.8.8
+  '@chakra-ui/system': ^1.12.1
   '@emotion/react': ^11
   '@emotion/styled': ^11
   '@redux-devtools/extension': ^3.2.2
@@ -20,7 +22,9 @@ specifiers:
 
 dependencies:
   '@babel/core': 7.17.9
+  '@chakra-ui/icons': 1.1.7_ec02b824bed6ab9ca8725186341c5110
   '@chakra-ui/react': 1.8.8_2bd39d923fa6b5d464e796c66cc7dfb5
+  '@chakra-ui/system': 1.12.1_09a0c9559c3e7c8c898f158921333fde
   '@emotion/react': 11.9.0_@babel+core@7.17.9+react@17.0.2
   '@emotion/styled': 11.8.1_3ce471551e6e06bcaecec3488aa5ccb5
   '@redux-devtools/extension': 3.2.2_redux@4.1.2
@@ -512,6 +516,18 @@ packages:
     dependencies:
       '@chakra-ui/system': 1.12.1_09a0c9559c3e7c8c898f158921333fde
       '@chakra-ui/utils': 1.10.4
+      react: 17.0.2
+    dev: false
+
+  /@chakra-ui/icons/1.1.7_ec02b824bed6ab9ca8725186341c5110:
+    resolution: {integrity: sha512-YIHxey/B4M2PyFASlHXtAWFyW+tsAtGAChOJ8dsM2kpu1MbVUqm/6nMI1KIFd7Te5IWuNYA75rAHBdLI0Yu61A==}
+    peerDependencies:
+      '@chakra-ui/system': '>=1.0.0'
+      react: '>=16.8.6'
+    dependencies:
+      '@chakra-ui/icon': 2.0.5_ec02b824bed6ab9ca8725186341c5110
+      '@chakra-ui/system': 1.12.1_09a0c9559c3e7c8c898f158921333fde
+      '@types/react': 17.0.44
       react: 17.0.2
     dev: false
 
@@ -1327,6 +1343,14 @@ packages:
       '@types/react': 18.0.5
       hoist-non-react-statics: 3.3.2
       redux: 4.1.2
+    dev: false
+
+  /@types/react/17.0.44:
+    resolution: {integrity: sha512-Ye0nlw09GeMp2Suh8qoOv0odfgCoowfM/9MG6WeRD60Gq9wS90bdkdRtYbRkNhXOpG4H+YXGvj4wOWhAC0LJ1g==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.0.11
     dev: false
 
   /@types/react/18.0.5:
