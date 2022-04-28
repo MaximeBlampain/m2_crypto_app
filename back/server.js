@@ -6,6 +6,12 @@ const app = express()
 
 const { PORT } = config
 
+/* Routes */
+require('./routes/CryptoAssetRoutes')(app)
+require('./routes/UserRoutes')(app)
+
+app.get("/", (req, res) => res.send("Hello World"))
+
 app.listen(PORT, () => {
   connectDatabase()
     .then(() => {
