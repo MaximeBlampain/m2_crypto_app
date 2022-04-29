@@ -14,6 +14,9 @@ class UserModel extends Model {
   getEmail(){ return this.EMAIL }
   setEmail(email){ this.EMAIL = email }
 
+  getPassword(){ return this.PASSWORD }
+  setPassword(password){ this.PASSWORD = password }
+
   getAvatar(){ return this.AVATAR }
   setAvatar(avatar){ this.AVATAR = avatar }
 }
@@ -33,6 +36,10 @@ UserModel.init({
     allowNull: true,
   },
   EMAIL: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  PASSWORD: {
     type: DataTypes.STRING,
     allowNull: false,
   },
