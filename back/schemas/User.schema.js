@@ -13,7 +13,7 @@ function createUser(req, res, next){
     lastname: Joi.string(),
     email: Joi.string().email().required(),
     password: Joi.string().required(),
-    avatar: Joi.string().base64(),
+    languageKey: Joi.string(),
   }).required()
   schemaValidator(req, next, schema)
 }
@@ -30,7 +30,7 @@ function updateUser(req, res, next){
     lastname: Joi.string(),
     email: Joi.string().email(),
     password: Joi.string(),
-    avatar: Joi.string().base64(),
+    languageKey: Joi.string(),
   }).required()
   schemaValidator(req, next, schema)
 }
