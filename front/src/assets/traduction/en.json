@@ -1,0 +1,23 @@
+{
+  "CRYPTO_APP": "Crypto App",
+  "EMAIL": "Email",
+  "PASSWORD": "Password",
+  "FIRSTNAME": "Firstname",
+  "LASTNAME": "Lastname",
+  "SELECTED_LANGUAGE": "Selected Language",
+  "EN": "English",
+  "FR": "French",
+
+
+  "LOGIN": {
+    "NO_ACCOUNT": "No account yet ?",
+    "REGISTER": "Register",
+    "LOGIN": "Login"
+  },
+
+  "SIGNUP": {
+    "SIGN_UP_NOW": "Sign up Now !",
+    "ALREADY_HAVE_AN_ACCOUNT": "Already have an account ?"
+
+  }
+}

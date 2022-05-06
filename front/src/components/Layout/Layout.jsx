@@ -1,4 +1,5 @@
-import {Flex} from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
+
 import Header from "./Header";
 
 export default function Layout({
@@ -7,7 +8,7 @@ export default function Layout({
   return (
     <Flex id="layout_container" direction="column">
       <Header />
-      { children }
+      {children}
     </Flex>
   )
 }
