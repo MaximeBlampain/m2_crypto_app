@@ -8,16 +8,14 @@
   "EN": "Anglais",
   "FR": "Français",
 
+  "NO_ACCOUNT": "Pas encore de compte ?",
+  "REGISTER": "S'inscrire",
+  "LOGIN": "Se connecter",
 
-  "LOGIN": {
-    "NO_ACCOUNT": "Pas encore de compte ?",
-    "REGISTER": "S'inscrire",
-    "LOGIN": "Se connecter"
-  },
+  "SIGN_UP_NOW": "Inscrivez-vous maintenant !",
+  "ALREADY_HAVE_AN_ACCOUNT": "Déjà un compte ?",
 
-  "SIGNUP": {
-    "SIGN_UP_NOW": "Inscrivez-vous maintenant !",
-    "ALREADY_HAVE_AN_ACCOUNT": "Déjà un compte ?"
-
-  }
+  "DASHBOARD": "Tableau de bord",
+  "WALLET": "Portefeuille",
+  "DISCONNECT": "Déconnexion"
 }

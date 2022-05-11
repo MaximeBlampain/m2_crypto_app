@@ -110,13 +110,13 @@ export default function Signup({ signup }) {
         <Flex direction="column" justify="center" align="center">
           <Text>{translation.SIGNUP.ALREADY_HAVE_AN_ACCOUNT}</Text>
           <Text textDecoration="underline" fontStyle="italic">
-            <NavLink to="/login">{`${translation.LOGIN.LOGIN}...`} </NavLink>
+            <NavLink to="/login">{`${translation.LOGIN}...`} </NavLink>
           </Text>
         </Flex>
       </Stack>
 
       <Button w="200px" colorScheme="yellow" color="white">
-        {translation.LOGIN.REGISTER}
+        {translation.REGISTER}
       </Button>
     </SignTemplate>
   )

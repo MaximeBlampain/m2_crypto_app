@@ -71,15 +71,15 @@ export default function Login({ login }) {
         </InputGroup>
 
         <Flex direction="column" justify="center" align="center">
-          <Text>{translation.LOGIN.NO_ACCOUNT}</Text>
+          <Text>{translation.NO_ACCOUNT}</Text>
           <Text textDecoration="underline" fontStyle="italic">
-            <NavLink to="/signup">{`${translation.LOGIN.REGISTER}...`} </NavLink>
+            <NavLink to="/signup">{`${translation.REGISTER}...`} </NavLink>
           </Text>
         </Flex>
       </Stack>
 
       <Button w="200px" colorScheme="yellow" color="white">
-        {translation.LOGIN.LOGIN}
+        {translation.LOGIN}
       </Button>
     </SignTemplate>
   )
