@@ -60,7 +60,7 @@ export default function Signup({ signup }) {
     <SignTemplate>
       <Flex mb="55" direction="column" align="center"> 
         <Heading mb="15">{translation.CRYPTO_APP}</Heading>
-        <Text fontSize="1.2rem" fontStyle="italic">{translation.SIGNUP.SIGN_UP_NOW}</Text>
+        <Text fontSize="1.2rem" fontStyle="italic">{translation.SIGN_UP_NOW}</Text>
       </Flex>
 
       <Stack spacing="4" display="flex" align="center">
@@ -108,7 +108,7 @@ export default function Signup({ signup }) {
         </InputGroup>
 
         <Flex direction="column" justify="center" align="center">
-          <Text>{translation.SIGNUP.ALREADY_HAVE_AN_ACCOUNT}</Text>
+          <Text>{translation.ALREADY_HAVE_AN_ACCOUNT}</Text>
           <Text textDecoration="underline" fontStyle="italic">
             <NavLink to="/login">{`${translation.LOGIN}...`} </NavLink>
           </Text>
