@@ -9,11 +9,11 @@ const schemaValidator = require('../utils/schemaValidator')
  */
 function createUser(req, res, next){
   const schema = Joi.object({
-    firstname: Joi.string(),
-    lastname: Joi.string(),
-    email: Joi.string().email().required(),
-    password: Joi.string().required(),
-    languageKey: Joi.string(),
+    FIRSTNAME: Joi.string(),
+    LASTNAME: Joi.string(),
+    EMAIL: Joi.string().email().required(),
+    PASSWORD: Joi.string().required(),
+    LANGUAGE_KEY: Joi.string(),
   }).required()
   schemaValidator(req, next, schema)
 }
@@ -26,11 +26,14 @@ function createUser(req, res, next){
  */
 function updateUser(req, res, next){
   const schema = Joi.object({
-    firstname: Joi.string(),
-    lastname: Joi.string(),
-    email: Joi.string().email(),
-    password: Joi.string(),
-    languageKey: Joi.string(),
+    USER_ID: Joi.string().uuid().required(),
+    fieldsToEdit: Joi.object({
+      FIRSTNAME: Joi.string(),
+      LASTNAME: Joi.string(),
+      EMAIL: Joi.string().email(),
+      PASSWORD: Joi.string(),
+      LANGUAGE_KEY: Joi.string(),
+    }).required(),
   }).required()
   schemaValidator(req, next, schema)
 }
@@ -43,7 +46,7 @@ function updateUser(req, res, next){
  */
 function deleteUser(req, res, next){
   const schema = Joi.object({
-    userId: Joi.string().uuid()
+    USER_ID: Joi.string().uuid()
   }).required()
   schemaValidator(req, next, schema)
 }
@@ -56,8 +59,8 @@ function deleteUser(req, res, next){
  */
 function authenticateUser(req, res, next){
   const schema = Joi.object({
-    email: Joi.string().email().required(),
-    password: Joi.string().required(),
+    EMAIL: Joi.string().email().required(),
+    PASSWORD: Joi.string().required(),
   }).required()
   schemaValidator(req, next, schema)
 }
