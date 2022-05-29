@@ -1,6 +1,7 @@
 const User = require('../models/User.model')
 
 const { encrypt, decrypt } = require("../utils/crypt");
+const { createToken } = require('../utils/jwt');
 
 async function authenticate(req, res){
   const {
@@ -19,9 +20,11 @@ async function authenticate(req, res){
 
   if(!userToConnect || !isPasswordGood) return res.status(404).send("Email or Password incorrect")
 
+
   const user = {
     ...userToConnect.dataValues,
     PASSWORD: "",
+    token: createToken(userToConnect.dataValues.USER_ID), 
   }
   return res.status(202).json(user)
 }
@@ -51,31 +54,21 @@ async function findAll(req, res){
   return res.status(200).json(users.map(user => {
     return {
       ...user.dataValues,
-      PASSWORD: "",
+      PASSWORD: decrypt(user.dataValues.PASSWORD),
     }
   }))
 }
 
 async function create(req, res){
-  const {
-    FIRSTNAME,
-    LASTNAME = "",
-    EMAIL,
-    PASSWORD,
-    LANGUAGE_KEY,
-  } = req.body
-
   const newUser = await User.create({
-    FIRSTNAME,
-    LASTNAME,
-    EMAIL,
-    PASSWORD: encrypt(PASSWORD),
-    LANGUAGE_KEY,
+    ...req.body,
+    PASSWORD: encrypt(req.body.PASSWORD),
   })
 
   const user = {
     ...newUser.dataValues,
     PASSWORD: "",
+    token: createToken(newUser.dataValues.USER_ID),
   }
   
 
@@ -87,7 +80,6 @@ async function edit(req, res) {
     USER_ID,
     fieldsToEdit,
   } = req.body
-
   const actualUser = await User.findOne({
     where: {
       USER_ID: USER_ID

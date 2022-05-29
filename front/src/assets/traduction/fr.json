@@ -17,5 +17,11 @@
 
   "DASHBOARD": "Tableau de bord",
   "WALLET": "Portefeuille",
-  "DISCONNECT": "Déconnexion"
+  "DISCONNECT": "Déconnexion",
+
+  "MY_PROFILE": "Mon profil",
+  "EDIT": "Modifier",
+
+  "DELETE_ACCOUNT": "Supprimer mon compte",
+  "DO_YOU_WANT_TO_DELETE_YOUR_ACCOUNT": "Êtes-vous sur de vouloir supprimer votre compte ? Cette action est irréversible."
 }

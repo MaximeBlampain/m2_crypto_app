@@ -19,7 +19,6 @@ export default function Wallet() {
       p="50"
       h="calc(100vh - 80px)"
       direction="column"
-      justify="space-around"
       align="center"
     >
       <Text as="b" fontSize="2xl"> PORTEFEUILLE </Text>
@@ -27,7 +26,7 @@ export default function Wallet() {
         <Button borderRightRadius="0" colorScheme="yellow"> Ajouter une monnaie</Button>
         <Button borderLeftRadius="0" colorScheme="red"> Supprimer une monnaie</Button>
       </Flex>
-      <TableContainer mt="10">
+      <TableContainer mt="10" >
         <Table variant="striped" colorScheme="yellow">
           <Thead>
             <Tr>

@@ -18,6 +18,11 @@
 
   "DASHBOARD": "Dashboard",
   "WALLET": "Wallet",
-  "DISCONNECT": "Disconnect"
+  "DISCONNECT": "Disconnect",
 
+  "MY_PROFILE": "My profile",
+  "EDIT": "Edit",
+  
+  "DELETE_ACCOUNT": "Delete my account",
+  "DO_YOU_WANT_TO_DELETE_YOUR_ACCOUNT": "Are you sure you want to delete your account? This action is irreversible."
 }

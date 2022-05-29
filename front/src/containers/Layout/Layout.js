@@ -3,13 +3,16 @@ import { connect } from "react-redux"
 
 // Components
 import Layout from "../../components/Layout"
-import { useMemo } from "react"
 
 // Actions
+import { logout } from "../../stores/Login/LoginActions"
 
 // Selectors
-import { selectLanguageKey } from "../../stores/Profile/ProfileSelectors"
-import { logout } from "../../stores/Login/LoginActions"
+import { 
+  selectFirstname,
+  selectLastname,
+  selectLanguageKey 
+} from "../../stores/Profile/ProfileSelectors"
 
 // Redux
 const mapDispatchToProps = dispatch => ({
@@ -17,6 +20,8 @@ const mapDispatchToProps = dispatch => ({
 })
 
 const mapStateToProps = createStructuredSelector({
+  FIRSTNAME: selectFirstname,
+  LASTNAME: selectLastname,
   LANGUAGE_KEY: selectLanguageKey
 })
 

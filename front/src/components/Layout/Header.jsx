@@ -3,7 +3,7 @@ import {Button, Flex, Center} from "@chakra-ui/react";
 
 import ProfileCard from "./components/ProfileCard";
 
-export default function Header({ translation, onLogout }) {
+export default function Header({ translation, userName, onLogout }) {
   return(
     <Flex 
       p="5"
@@ -21,10 +21,10 @@ export default function Header({ translation, onLogout }) {
         <Button colorScheme="yellow">{translation.DASHBOARD}</Button>
       </NavLink>
       <NavLink to="/wallet">
-        <Button colorScheme="yellow">{translation.CRYPTO_APP}</Button>
+        <Button colorScheme="yellow">{translation.WALLET}</Button>
       </NavLink>
       <NavLink to="/profile">
-        <ProfileCard />
+        <ProfileCard userName={userName} />
       </NavLink>
       <Button 
         colorScheme='red' 

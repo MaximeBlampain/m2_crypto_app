@@ -11,10 +11,10 @@ function createUser(req, res, next){
   const schema = Joi.object({
     FIRSTNAME: Joi.string(),
     LASTNAME: Joi.string(),
-    EMAIL: Joi.string().email().required(),
-    PASSWORD: Joi.string().required(),
+    EMAIL: Joi.string().email(),
+    PASSWORD: Joi.string(),
     LANGUAGE_KEY: Joi.string(),
-  }).required()
+  })
   schemaValidator(req, next, schema)
 }
 
@@ -26,15 +26,15 @@ function createUser(req, res, next){
  */
 function updateUser(req, res, next){
   const schema = Joi.object({
-    USER_ID: Joi.string().uuid().required(),
+    USER_ID: Joi.string().uuid(),
     fieldsToEdit: Joi.object({
       FIRSTNAME: Joi.string(),
       LASTNAME: Joi.string(),
       EMAIL: Joi.string().email(),
       PASSWORD: Joi.string(),
       LANGUAGE_KEY: Joi.string(),
-    }).required(),
-  }).required()
+    }),
+  })
   schemaValidator(req, next, schema)
 }
 
@@ -47,7 +47,7 @@ function updateUser(req, res, next){
 function deleteUser(req, res, next){
   const schema = Joi.object({
     USER_ID: Joi.string().uuid()
-  }).required()
+  })
   schemaValidator(req, next, schema)
 }
 
@@ -59,9 +59,9 @@ function deleteUser(req, res, next){
  */
 function authenticateUser(req, res, next){
   const schema = Joi.object({
-    EMAIL: Joi.string().email().required(),
-    PASSWORD: Joi.string().required(),
-  }).required()
+    EMAIL: Joi.string().email(),
+    PASSWORD: Joi.string(),
+  })
   schemaValidator(req, next, schema)
 }
 

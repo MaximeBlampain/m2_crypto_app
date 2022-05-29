@@ -7,6 +7,8 @@ import getTranslation from "../../utils/getTranslation"
 
 export default function Layout({
   children,
+  FIRSTNAME,
+  LASTNAME,
   LANGUAGE_KEY,
   onLogout,
 }) {
@@ -16,6 +18,7 @@ export default function Layout({
     <Flex id="layout_container" direction="column">
       <Header 
         translation={translation} 
+        userName={`${FIRSTNAME} ${LASTNAME}`}
         onLogout={onLogout}
       />
       {children}

@@ -26,8 +26,8 @@ import {
 
 
 const initialForm = {
-  email: "",
-  password: "",
+  EMAIL: "",
+  PASSWORD: "",
 }
 
 export default function Login({ login }) {
@@ -37,15 +37,16 @@ export default function Login({ login }) {
   const translation = useMemo(() => getTranslation("en"),[])
 
   function onLogin() {
-    const emailExist = form?.email && form?.email.length > 0
-    const emailHaveGoodShape = emailExist && EMAIL_REGEX.test(form.email)
+    const emailExist = form?.EMAIL && form?.EMAIL.length > 0
+    const emailHaveGoodShape = emailExist && EMAIL_REGEX.test(form.EMAIL)
 
-    const passwordExist = form?.password && form?.password.length > 0
+    const passwordExist = form?.PASSWORD && form?.PASSWORD.length > 0
 
     if(!emailHaveGoodShape || !passwordExist){
       return;
     }
-    
+    console.log("login")
+    login(form)
   }
 
   return (
@@ -56,9 +57,9 @@ export default function Login({ login }) {
         <InputGroup w="200">
           <InputLeftAddon bg="yellow.400" children={<EmailIcon color='white'/>} />
           <Input 
-            type='email' 
+            type='email'
             placeholder={translation.EMAIL} 
-            onChange={e => onChangeInput(e, "email")}
+            onChange={e => onChangeInput(e, "EMAIL")}
           />
         </InputGroup>
         <InputGroup w="200">
@@ -66,7 +67,7 @@ export default function Login({ login }) {
           <Input 
             type='password' 
             placeholder={translation.PASSWORD} 
-            onChange={e => onChangeInput(e, "password")}
+            onChange={e => onChangeInput(e, "PASSWORD")}
           />
         </InputGroup>
 
@@ -78,7 +79,7 @@ export default function Login({ login }) {
         </Flex>
       </Stack>
 
-      <Button w="200px" colorScheme="yellow" color="white">
+      <Button w="200px" colorScheme="yellow" color="white" onClick={() => onLogin()}>
         {translation.LOGIN}
       </Button>
     </SignTemplate>
