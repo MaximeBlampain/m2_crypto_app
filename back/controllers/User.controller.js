@@ -15,10 +15,12 @@ async function authenticate(req, res){
     }
   })
 
+  if(!userToConnect) return res.status(404).send("User not found !")
+
   const isPasswordGood = decrypt(userToConnect?.PASSWORD ?? "") === PASSWORD
 
 
-  if(!userToConnect || !isPasswordGood) return res.status(404).send("Email or Password incorrect")
+  if(!isPasswordGood) return res.status(404).send("Email or Password incorrect")
 
 
   const user = {

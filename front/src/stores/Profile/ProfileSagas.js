@@ -1,4 +1,4 @@
-import { takeLatest, put, call, select } from "redux-saga/effects"
+import { takeEvery, put, call, select } from "redux-saga/effects"
 
 /* Actions */
 import { updateSuccess } from "./ProfileActions"
@@ -18,8 +18,8 @@ import getHeaders from "../../utils/getHeaders"
 import requestManager from "../../utils/requestManager"
 
 export default function* profileSaga(){
-  yield takeLatest(UPDATE_PROFILE, update)
-  yield takeLatest(DELETE_PROFILE, deleteUser)
+  yield takeEvery(UPDATE_PROFILE, update)
+  yield takeEvery(DELETE_PROFILE, deleteUser)
 }
 
 function* update({ payload }){

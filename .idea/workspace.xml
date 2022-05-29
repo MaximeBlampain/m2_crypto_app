@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33684515-5828-4d0a-940f-45db1eccfdb1" name="Changes" comment="" />
+    <list default="true" id="33684515-5828-4d0a-940f-45db1eccfdb1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/controllers/CryptoAsset.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/controllers/CryptoAsset.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/controllers/User.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/controllers/User.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/models/CryptoAsset.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/models/CryptoAsset.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/back/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/routes/CryptoAsset.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/routes/CryptoAsset.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/schemas/CryptoAsset.schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/schemas/CryptoAsset.schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/front/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/traduction/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/traduction/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/traduction/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/traduction/fr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Dashboard/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Layout/components/ProfileCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Layout/components/ProfileCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Signup/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Signup/Signup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Wallet/Wallet.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Wallet/Wallet.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/containers/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/containers/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/containers/Wallet/Wallet.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/containers/Wallet/Wallet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/stores/Dashboard/DashboardActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/stores/Dashboard/DashboardReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/stores/Dashboard/DashboardTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/stores/Login/LoginSagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/stores/Login/LoginSagas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/stores/Profile/ProfileSagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/stores/Profile/ProfileSagas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/stores/Signup/SignupActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/stores/Signup/SignupActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/stores/Signup/SignupSagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/stores/Signup/SignupSagas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/stores/Wallet/WalletActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/stores/Wallet/WalletActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/stores/Wallet/WalletReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/stores/Wallet/WalletReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/stores/Wallet/WalletTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/stores/Wallet/WalletTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/stores/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/stores/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/stores/sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/stores/sagas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/utils/getHeaders.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/utils/getHeaders.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,8 +69,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "17.6.0",
-    "javascript.nodejs.core.library.typings.version": "17.0.29",
+    "javascript.nodejs.core.library.configured.version": "18.0.0",
+    "javascript.nodejs.core.library.typings.version": "17.0.36",
     "last_opened_file_path": "/home/mblampain/Documents/dev/amalia-tech-recruitment",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "pnpm",
@@ -101,6 +137,7 @@
       <workItem from="1651313887861" duration="7137000" />
       <workItem from="1652372170021" duration="2221000" />
       <workItem from="1652441328093" duration="19000" />
+      <workItem from="1653843164505" duration="15358000" />
     </task>
     <servers />
   </component>

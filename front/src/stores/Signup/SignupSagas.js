@@ -1,4 +1,4 @@
-import { takeLatest, put, call } from "redux-saga/effects"
+import { takeEvery, put, call } from "redux-saga/effects"
 
 /* Actions */
 import { signupSuccess } from "./SignupActions"
@@ -14,13 +14,12 @@ import getHeaders from "../../utils/getHeaders"
 import requestManager from "../../utils/requestManager"
 
 export default function* signupSaga(){
-    yield takeLatest(SIGNUP, signup)
+    yield takeEvery(SIGNUP, signup)
 }
 
 function* signup({ payload }){
     const url = `${URL}/user/`
     const headers = getHeaders("POST", "", payload)
-
     const response = yield call(requestManager, url, headers)
     yield put(signupSuccess(response))
 }

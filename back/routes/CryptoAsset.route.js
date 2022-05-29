@@ -2,9 +2,9 @@ const express = require("express")
 
 /* Controllers */
 const { findAll, create, findOne, findByUser, destroy } = require("../controllers/CryptoAsset.controller")
-const { addCryptoAsset } = require("../schemas/CryptoAsset.schema")
 
 /* Schemas */
+const { addCryptoAsset } = require("../schemas/CryptoAsset.schema")
 
 /* Token Middleware */
 const { checkToken } = require("../utils/jwt")

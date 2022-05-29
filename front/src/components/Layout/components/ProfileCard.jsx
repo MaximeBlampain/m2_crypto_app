@@ -7,7 +7,6 @@ import {
 export default function ProfileCard({ userName }){
   return (
     <Button colorScheme="yellow">
-      <Avatar mr="3" size='sm' name={userName} />
       {userName}
     </Button>
   )

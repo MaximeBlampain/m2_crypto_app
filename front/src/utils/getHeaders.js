@@ -2,7 +2,7 @@
 export default function (request = "", token = "", body){
     return {
         method: request,
-        body: JSON.stringify(body),
+        body: body ? JSON.stringify(body) : null,
         headers: {
             "Access-Control-Allow-Origin": "*",
             "Accept": "application/json",

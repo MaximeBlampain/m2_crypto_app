@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 
 /* Routers */
-const { userRouter, cryptoAssetRouter} = require("./routes")
+const { userRouter, cryptoAssetRouter, cryptoRouter } = require("./routes")
 
 /* Utils */
 const {connectDatabase} = require("./utils/Sequelize")
@@ -19,7 +19,8 @@ app.use(cors())
 
 /* Routers */
 app.use("/user", userRouter)
-app.use("/crypto", cryptoAssetRouter)
+app.use("/crypto", cryptoRouter)
+app.use("/asset", cryptoAssetRouter)
 
 app.listen(PORT, () => {
   connectDatabase()

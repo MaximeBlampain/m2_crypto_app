@@ -15,7 +15,7 @@ CryptoAssetModel.init({
     type: DataTypes.UUID,
     allowNull: false
   },
-  TOKEN: {
+  SYMBOL: {
     type: DataTypes.STRING,
     allowNull: false,
   },

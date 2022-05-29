@@ -45,7 +45,6 @@ export default function Login({ login }) {
     if(!emailHaveGoodShape || !passwordExist){
       return;
     }
-    console.log("login")
     login(form)
   }
 

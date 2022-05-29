@@ -23,5 +23,24 @@
   "EDIT": "Modifier",
 
   "DELETE_ACCOUNT": "Supprimer mon compte",
-  "DO_YOU_WANT_TO_DELETE_YOUR_ACCOUNT": "Êtes-vous sur de vouloir supprimer votre compte ? Cette action est irréversible."
+  "DO_YOU_WANT_TO_DELETE_YOUR_ACCOUNT": "Êtes-vous sur de vouloir supprimer votre compte ? Cette action est irréversible.",
+
+  "CRYPTO_LIST_ACCEPTED": "Liste des cryptos acceptées",
+  "ICON": "Icône",
+  "SYMBOL": "Symbole",
+  "NAME": "Nom",
+  "ACTUAL_PRICE": "Prix actuel",
+  "VARIATION_24H" : "Variation ~24h",
+  "VARIATION_7D" : "Variation ~7j",
+  "MY_ASSETS": "Mes actifs",
+
+  "UNIT_COST_PRICE": "Prix de revient unitaire",
+  "NUMBER_OF_TOKEN": "Nombre de jetons",
+  "ACTIONS": "Actions",
+  "ADD_ASSET": "Ajouter une monnaie",
+  "CRYPTO": "Cryptomonnaie",
+  "QUANTITY": "Quantité",
+  "ADD": "Ajouter",
+  "DELETE": "Supprimer",
+  "DO_YOU_WANT_TO_DELETE_THIS_ASSET": "Êtes-vous sur de vouloir supprimer cet actif ? L'action est irréversible."
 }

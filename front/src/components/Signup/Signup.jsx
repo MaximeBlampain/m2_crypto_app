@@ -55,7 +55,6 @@ export default function Signup({ signup }) {
     if(!emailHaveGoodShape || !passwordExist || !firstnameExist){
       return;
     }
-    console.log('form', form)
 
     signup(form)
   }

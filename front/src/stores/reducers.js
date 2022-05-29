@@ -1,11 +1,11 @@
 import { combineReducers } from "redux"
 
-import DashboardReducer from "./Dashboard/DashboardReducer"
+import CryptoReducer from "./Crypto/CryptoReducer"
 import ProfileReducer from "./Profile/ProfileReducer"
 import WalletReducer from "./Wallet/WalletReducer"
 
 export default combineReducers({
-  dashboard: DashboardReducer,
+  crypto: CryptoReducer,
   profile: ProfileReducer,
   wallet: WalletReducer,
 })

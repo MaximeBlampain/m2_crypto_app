@@ -127,10 +127,10 @@ export default function Profile({
         </InputGroup>
       </Stack>
       <Flex mt="55">
-        <Button w="200px" colorScheme="yellow" color="white" onClick={() => update()}>
+        <Button borderRightRadius="0" w="200px" colorScheme="yellow" color="white" onClick={() => update()}>
           {translation.EDIT}
         </Button>
-        <Button w="200px" colorScheme="red" color="white" onClick={() => deleteProfile()}>
+        <Button borderLeftRadius="0" w="200px" colorScheme="red" color="white" onClick={() => deleteProfile()}>
           {translation.DELETE_ACCOUNT}
         </Button>
       </Flex>

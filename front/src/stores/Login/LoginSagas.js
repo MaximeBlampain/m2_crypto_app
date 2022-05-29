@@ -1,4 +1,4 @@
-import { takeLatest, put, call } from "redux-saga/effects"
+import { takeEvery, put, call } from "redux-saga/effects"
 
 /* Actions */
 import { loginSuccess } from "./LoginActions"
@@ -14,7 +14,7 @@ import getHeaders from "../../utils/getHeaders"
 import requestManager from "../../utils/requestManager"
 
 export default function* loginSaga(){
-    yield takeLatest(LOGIN, login)
+    yield takeEvery(LOGIN, login)
 }
 
 function* login({ payload }){

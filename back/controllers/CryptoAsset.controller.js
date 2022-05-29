@@ -3,7 +3,7 @@ const CryptoAssetModel = require("../models/CryptoAsset.model")
 async function findAll(req, res){
   const assets = await CryptoAssetModel.findAll()
 
-  return res.status(200).jsons(assets)
+  return res.status(200).json(assets)
 }
 
 async function findOne(req, res){
@@ -15,7 +15,7 @@ async function findOne(req, res){
 
   if(!asset) return res.status(404).send("Asset not found")
 
-  return res.status(200).send(asset)
+  return res.status(200).json(asset)
 }
 
 async function findByUser(req, res){
@@ -31,6 +31,7 @@ async function findByUser(req, res){
 }
 
 async function create(req, res){
+  console.log("req.body", req.body)
   const newAsset = await CryptoAssetModel.create({...req.body})
 
   return res.status(201).json(newAsset)
